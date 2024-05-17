@@ -14,7 +14,7 @@ public class UrbanTrail extends Trail{
         String durationStr = LocalTime.MIN.plus(Duration.ofMinutes(calculateTime())).toString();
         System.out.println("""
             Trail through %1$s.
-            Enjoy! 
+            Enjoy!
             Total time = %2$s hours""".formatted(city, durationStr));
     }
 }
