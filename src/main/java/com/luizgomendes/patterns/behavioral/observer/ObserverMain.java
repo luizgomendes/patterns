@@ -15,6 +15,10 @@ public class ObserverMain {
         infoThread.removeSubscriber(sub1);
         infoThread.publish("Only 2 gets this");
 
+        infoThread.removeSubscriber(sub2);
+
+        infoThread.publish("Nobody gets this");
+
         infoThread.printAllInfo();
         sub1.printReceivedInfo();
         sub2.printReceivedInfo();
